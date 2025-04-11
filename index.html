@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FuzzyWasteRadar</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌍 FuzzyWasteRadar</h1>
+    <p>Track bin levels using fuzzy logic & maps! 📍</p>
+
+    <div id="map"></div>
+
+    <div class="bins">
+      <div class="bin" id="bin1">
+        <h2>🟢 Library</h2>
+        <p>Status: <span class="status">Low</span></p>
+        <p>Fill Level: <span class="level">25%</span></p>
+      </div>
+      <div class="bin" id="bin2">
+        <h2>🟡 KORE</h2>
+        <p>Status: <span class="status">Medium</span></p>
+        <p>Fill Level: <span class="level">55%</span></p>
+      </div>
+      <div class="bin" id="bin3">
+        <h2>🔴 Main Entrance</h2>
+        <p>Status: <span class="status">High</span></p>
+        <p>Fill Level: <span class="level">90%</span></p>
+      </div>
+    </div>
+
+    <button onclick="updateBins()">🔄 Update Bin Status</button>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
